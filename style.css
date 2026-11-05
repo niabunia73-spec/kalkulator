@@ -1,0 +1,80 @@
+/* Mengatur font dan background halaman */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+/* Wadah Utama Kalkulator */
+.calculator {
+    background-color: #22252d;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+    width: 320px;
+}
+
+/* Tampilan Layar */
+#display {
+    width: 100%;
+    height: 60px;
+    background-color: #2b2f3c;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Grid Tombol */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Desain Dasar Tombol */
+button {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #292d36;
+    color: #ffffff;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #373c47;
+}
+
+/* Warna Tombol Khusus */
+.btn-operator {
+    color: #26e7a6;
+}
+
+.btn-clear {
+    color: #f25f5c;
+}
+
+.btn-equal {
+    background-color: #26e7a6;
+    color: #22252d;
+    grid-row: span 2; /* Membuat tombol "=" memanjang ke bawah */
+}
+
+.btn-equal:hover {
+    background-color: #20c991;
+}
+
+.btn-zero {
+    grid-column: span 2; /* Membuat tombol "0" memanjang ke samping */
+}
